@@ -14,7 +14,8 @@
 .section-title {
   font-size: 2rem;
   padding-bottom: 0.5rem;
-  text-align: center; }
+  text-align: center;
+  font-weight: 100; }
 
 .line-bottom {
   height: 2px;
@@ -47,6 +48,22 @@
 .my-4 {
   margin: 4rem 0; }
 
+.bg-main {
+  background: #ffbc00;
+  color: #111; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #eeeeee;
+  color: #111; }
+
+.bg-medium {
+  background: #ccc;
+  color: #111; }
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -60,16 +77,16 @@
   color: #333; }
 
 .btn-light {
-  background-color: #f4f4f4;
+  background-color: #eeeeee;
   color: #333; }
 
 .btn-dark {
   background-color: #333;
-  color: #f4f4f4; }
+  color: #eeeeee; }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: #ffbc00; }
 
 * {
@@ -101,7 +118,8 @@ img {
 
 #main-nav {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0.5rem 0; }
   #main-nav ul {
     display: flex; }
     #main-nav ul li {
@@ -128,6 +146,11 @@ img {
       font-size: 4rem;
       line-height: 1.2;
       margin-bottom: 0.4rem; }
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specialties {
   margin-top: 3rem;
@@ -190,6 +213,56 @@ img {
     line-height: 13px;
     padding: 1rem;
     transition: all 1s ease; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.2rem; }
+  #about-a .about-info .bio {
+    border-left: 3px solid #ffbc00;
+    padding: 0.8rem; }
+
+#about-a .about-awards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  #about-a .about-awards i {
+    color: #ffbc00;
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+
+#about-b .progress {
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    background: #ffbc00;
+    border-radius: inherit; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem; }
+  #about-c .about-logos img {
+    width: 70%; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem; }
+  #about-d .testimonials p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-d .testimonials ul {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+    #about-d .testimonials ul img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 0.5rem; }
 
 #main-footer {
   background: #333;
